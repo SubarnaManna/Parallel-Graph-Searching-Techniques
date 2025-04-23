@@ -1,0 +1,153 @@
+Choosed_Model -> Inventory
+
+Delivery_type -> Bulk , Retail
+
+Vehicle_type -> {
+      "vehicle_type": "Two-Wheelers (Motorcycles)",
+      "fuel_type": "Petrol",
+      "load_capacity": "10-20 kg",
+      "range_with_10L_fuel": "300-500 km"
+    },
+
+customer_data -> 
+
+customer_id, 
+full_name
+user_name,
+password
+email_id
+phone_no
+address -> room_no,building_no,nearby_road,locality,city,pincode,state,landmark?
+location -> latitude,longitude
+
+
+
+factory,
+wholesaler,
+distrubutor,
+retailer
+
+logistic_network
+
+factory,
+platform,
+dark_store,
+delivery_partner
+customer
+
+delivery_network
+
+seller,
+customer,
+delivery_partner
+
+journey_map
+
+factory -> warehouse
+warehouse -> warehouse
+warehouse -> customer
+
+Main Dereived table -> ByFactory, ByCustomer, ByWarehouse
+------------------------------------------------------------------------------------------------
+
+
+customer_data [Table] 
+customer_id, 
+full_name
+user_name,
+password
+email_id
+phone_no
+address -> room_no,building_no,nearby_road,locality,city,pincode,state,landmark?
+location -> latitude,longitude
+
+
+Factory_Entity[Table]
+factory_id
+factory_name
+address -> comapny_name,part_no,nearby_road,locality,city,pincode,state,landmark?,country
+capacity
+location -> latitude,longitude
+
+Product_Entity[Table]
+product_id,
+product_name,
+specifications: array of objects
+weight (kg)
+dimension -> L, B,H
+price (rs)
+
+Real_Product_Table[Table]
+real_product_id
+product_id
+batch_no
+mfg
+exp
+barcode_no
+
+Warehouse_Entity[Table]
+warehouse_id
+warehouse_name,
+address -> comapny_name,part_no,nearby_road,locality,city,pincode,state,landmark?,country
+stock
+location -> latitude,longitude
+
+Logistic_Entity[Table]
+Vehicle_id
+Vehicle_no
+regd_yr
+reg_no
+owner_id
+fuel_type : enum("petrol","diesel","lng")
+load_capacity (kg)
+range_with_10L_fuel (Km)
+vehicle_type: enum("Two-Wheelers (Motorcycles)","Three-Wheelers (Auto Rickshaws)","Light Commercial Vehicles","Vans & Mini Trucks","Heavy Commercial Vehicles","Delivery Vans (Specialized Cargo Vans)","Electric Vehicles (EVs)","Courier Bikes","Refrigerated Vehicles","Cargo Bikes and Tricycles","Specialized Cargo Vehicles",)
+status : boolean
+
+
+Transport_Table[Table]
+transport_id
+transport_type : enum("factory->warehouse","warehouse->warehouse","warehouse->customer","warehouse->factory","customer->warehouse")
+Vehicle_id
+factory_id
+warehouse_id
+customer_id
+order_id
+completion_timestamp
+
+Transport_Queue[Table]
+transport_id
+transport_date
+Vehicle_id
+start_node_id
+end_node_id
+if_start: boolean
+if_end: boolean
+start_node_type: enum("factory","warehouse","customer")
+end_node_type: enum("factory","warehouse","customer")
+
+
+
+Order_Entity[Table]
+order_id
+order_type : enum("purchase","return")
+order_qty_type : enum("retail","bulk")
+shipper_id
+receiver_id
+shipper_type: enum("factory","warehouse","customer")
+receiver_type:enum("factory","warehouse","customer")
+order_timestamp
+deadline_date
+payment: boolean
+product_id
+qty
+
+
+Sales Data[Table]
+order_id
+real_product_id
+delivered: boolean
+sold : boolean
+
+
+

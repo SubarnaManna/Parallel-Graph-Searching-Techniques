@@ -1,0 +1,69 @@
+[
+    {
+      "vehicle_type": "Two-Wheelers (Motorcycles)",
+      "fuel_type": "Petrol",
+      "load_capacity": "10-20 kg",
+      "range_with_10L_fuel": "300-500 km"
+    },
+    {
+      "vehicle_type": "Three-Wheelers (Auto Rickshaws)",
+      "fuel_type": "Petrol, CNG",
+      "load_capacity": "200-500 kg",
+      "range_with_10L_fuel": "100-150 km"
+    },
+    {
+      "vehicle_type": "Light Commercial Vehicles",
+      "fuel_type": "Diesel",
+      "load_capacity": "500-2,000 kg",
+      "range_with_10L_fuel": "100-150 km"
+    },
+    {
+      "vehicle_type": "Vans & Mini Trucks",
+      "fuel_type": "Diesel, CNG",
+      "load_capacity": "1,000-2,500 kg",
+      "range_with_10L_fuel": "100-200 km"
+    },
+    {
+      "vehicle_type": "Heavy Commercial Vehicles",
+      "fuel_type": "Diesel",
+      "load_capacity": "5,000-20,000 kg",
+      "range_with_10L_fuel": "30-50 km"
+    },
+    {
+      "vehicle_type": "Delivery Vans (Specialized Cargo Vans)",
+      "fuel_type": "Diesel, Petrol",
+      "load_capacity": "1,000-2,000 kg",
+      "range_with_10L_fuel": "100-150 km"
+    },
+    {
+      "vehicle_type": "Electric Vehicles (EVs)",
+      "fuel_type": "Electric",
+      "load_capacity": "100-500 kg",
+      "range_with_10L_fuel": "60-100 km (full charge)"
+    },
+    {
+      "vehicle_type": "Courier Bikes",
+      "fuel_type": "Petrol",
+      "load_capacity": "10-30 kg",
+      "range_with_10L_fuel": "300-500 km"
+    },
+    {
+      "vehicle_type": "Refrigerated Vehicles",
+      "fuel_type": "Diesel",
+      "load_capacity": "1,000-5,000 kg",
+      "range_with_10L_fuel": "80-120 km"
+    },
+    {
+      "vehicle_type": "Cargo Bikes and Tricycles",
+      "fuel_type": "Electric, Pedal",
+      "load_capacity": "50-300 kg",
+      "range_with_10L_fuel": "60-80 km (Electric)"
+    },
+    {
+      "vehicle_type": "Specialized Cargo Vehicles",
+      "fuel_type": "Diesel",
+      "load_capacity": "10,000-40,000 kg",
+      "range_with_10L_fuel": "20-40 km"
+    }
+  ]
+  
