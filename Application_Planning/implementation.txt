@@ -1,0 +1,38 @@
+BFS
+DFS
+P-BFS
+P-DFS
+
+Comparison: -
+
+Space, Time, Compute
+
+Performance Metrics
+
+Workload Distribution
+Memory Usage
+
+Accuracy / Correctness
+Communication & Synchronization Overhead
+
+Algorithm-Specific Factors
+Implementation Complexity
+
+
+Common Parallel Graph Algorithms Compared
+
+Algorithm	Parallel Friendly?	Typical Use
+
+Parallel BFS	✅ Yes	Shortest paths in unweighted graphs
+
+Parallel DFS	❌ Harder to parallelize	Topological sort, path finding
+
+Parallel Dijkstra	⚠️ Needs careful parallel priority queue	Shortest path in weighted graphs
+
+Parallel Bellman-Ford	✅ Works well in distributed settings	Negative 
+
+
+E-Commerce order data develop
+Order data implement 
+Intergrate with flask app
+C Code conversion 
