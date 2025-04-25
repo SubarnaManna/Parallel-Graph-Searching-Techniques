@@ -60,7 +60,7 @@ email_id
 phone_no
 address -> room_no,building_no,nearby_road,locality,city,pincode,state,landmark?
 location -> latitude,longitude
-
+city_id 
 
 Factory_Entity[Table]
 factory_id
@@ -104,6 +104,7 @@ range_with_10L_fuel (Km)
 vehicle_type: enum("Two-Wheelers (Motorcycles)","Three-Wheelers (Auto Rickshaws)","Light Commercial Vehicles","Vans & Mini Trucks","Heavy Commercial Vehicles","Delivery Vans (Specialized Cargo Vans)","Electric Vehicles (EVs)","Courier Bikes","Refrigerated Vehicles","Cargo Bikes and Tricycles","Specialized Cargo Vehicles",)
 status : boolean
 
+----------------------------------------------------- 
 
 Transport_Table[Table]
 transport_id

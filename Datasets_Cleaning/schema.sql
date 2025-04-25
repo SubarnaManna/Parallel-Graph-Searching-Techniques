@@ -1,6 +1,9 @@
-state_id: int(2)
+
+
+
+state_id : int(2)
 state_name : str(40)
-state_type:enum("S","U")
+state_type : enum("S","U")
 capital : (25)
 
 
@@ -29,3 +32,5 @@ district_id
 state_id
 
 
+city-A city-C 
+......

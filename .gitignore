@@ -51,5 +51,8 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Datasets_Cleaning
-# __cleaning__
+Datasets_Cleaning
+__cleaning__
+Procfile
+C_Code
+Cache
