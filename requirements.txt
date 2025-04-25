@@ -1,0 +1,15 @@
+# requirements.txt
+# -----------------
+# This file lists the Python packages required to run the Flask application.
+# It is used by pip to install the dependencies.
+#
+# To install the requirements:
+# pip install -r requirements.txt
+#
+# To generate this file (if you modify the dependencies):
+# pip freeze > requirements.txt
+
+Flask==3.0.0 # Ensure a specific version for consistency
+# Add other dependencies here as needed.  For example:
+# python-decouple==3.8  #  For configuration management
+# gunicorn==21.2.0      #  For production WSGI server
