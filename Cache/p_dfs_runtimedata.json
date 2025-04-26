@@ -1,13 +1,7 @@
 {
-    "start_timestamp": "2025-04-23T19:21:22.737990",
-    "end_timestamp": "2025-04-23T19:21:25.783034",
+    
     "execution_time_sec": 3.045,
     "total_paths": 13700,
-    "throughput_paths_per_sec": 4499.179,
-    "compute_notes": {
-        "processes_used": 8,
-        "parallel": true,
-        "memory_estimate": "TBD",
-        "workload_distribution": "TBD"
-    }
+    "throughput_paths_per_sec": 4499.179
+    
 }
