@@ -1,7 +1,21 @@
 {
+<<<<<<< Updated upstream
     
     "execution_time_sec": 3.045,
     "total_paths": 13700,
     "throughput_paths_per_sec": 4499.179
     
+=======
+    "start_timestamp": "2025-05-01T12:13:33.714375",
+    "end_timestamp": "2025-05-01T12:13:35.062404",
+    "execution_time_sec": 1.348,
+    "total_paths": 1957,
+    "throughput_paths_per_sec": 1451.78,
+    "compute_notes": {
+        "processes_used": 8,
+        "parallel": true,
+        "memory_estimate": "TBD",
+        "workload_distribution": "TBD"
+    }
+>>>>>>> Stashed changes
 }
