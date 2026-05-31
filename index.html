@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result</title>
+</head>
+
+<body>
+    <h1>Student Result</h1>
+<pre id="viewer">Loading...</pre>
+
+<script>
+fetch("./central-database.tsv")
+    .then(r => r.text())
+    .then(text => {
+        document.getElementById("viewer").textContent = text;
+    })
+    .catch(err => {
+        document.getElementById("viewer").textContent =
+            "Failed to load database file.";
+        console.error(err);
+    });
+</script>
+
+</body>
+
+</html>
